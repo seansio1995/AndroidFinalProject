@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <virginia.edu.cs2110Fall14.T101_16.finalproject.gameview
+        android:id="@+id/gameview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+    <Button
+        android:id="@+id/rightbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/upbutton"
+        android:layout_marginTop="54dp"
+        android:layout_toRightOf="@+id/leftbutton"
+        android:text="@string/right" />
+
+    <Button
+        android:id="@+id/leftbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rightbutton"
+        android:layout_alignBottom="@+id/rightbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:text="@string/left" />
+
+    <Button
+        android:id="@+id/downbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upbutton"
+        android:layout_below="@+id/rightbutton"
+        android:text="@string/down" />
+
+    <Button
+        android:id="@+id/upbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/leftbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/up" />
+
+    <Button
+        android:id="@+id/bombbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leftbutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp"
+        android:text="@string/bombbutton" />
+
+    <Button
+        android:id="@+id/attackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/downbutton"
+        android:layout_alignLeft="@+id/bombbutton"
+        android:layout_marginBottom="21dp"
+        android:text="@string/attackbutton" />
+    
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
